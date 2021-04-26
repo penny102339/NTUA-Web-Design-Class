@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- HTML5 的宣告方式，比以往的宣告方式更簡單，未支援 HTML5的瀏覽器會忽略其特性。因為是宣告，所以沒有結束標籤 -->
+<html>
+<!-- 網頁的最根部元素 -->
+
+<head>
+  <!-- 在網頁的資訊，包含 CSS & JS 檔案的網址，內容不會顯示在頁面上 -->
+  <!-- 在瀏覽器 tab 標籤上的標題 -->
+  <title>br強制斷行</title>
+  <!-- 聲明該頁面的編碼方式 -->
+  <meta charset="UTF-8">
+  <!-- 行動裝置的顯示方式，initial-scale=1.0 代表不縮放 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 在瀏覽器 tab 標籤上的小圖示 -->
+  <link rel="icon" href="favicon.ico">
+  <link href="main.css" rel="stylesheet">
+  <style>
+    p {
+      margin-bottom: 1rem;
+      border: 1px dotted #333;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>br強制斷行</h2>
+  <p> 我是第一行 <br> 我是第二行 </p>
+  <p> 我是第一段 </p>
+  <p> 我是第二段 </p>
+  <div class="tip">
+    <ul>
+      <li>是空元素，所以沒有結束標籤</li>
+    </ul>
+  </div>
+</body>
+
+</html>

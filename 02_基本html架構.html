@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- HTML5 的宣告方式，比以往的宣告方式更簡單，未支援 HTML5的瀏覽器會忽略其特性。因為是宣告，所以沒有結束標籤 -->
+<html>
+<!-- 網頁的最根部元素 -->
+
+<head>
+  <!-- 在網頁的資訊，包含 CSS & JS 檔案的網址，內容不會顯示在頁面上 -->
+
+  <!-- 在瀏覽器 tab 標籤上的標題 -->
+  <title>網頁標題</title>
+  <!-- 聲明該頁面的編碼方式 -->
+  <meta charset="UTF-8">
+  <!-- 行動裝置的顯示方式，initial-scale=1.0 代表不縮放 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 在瀏覽器 tab 標籤上的小圖示 -->
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      padding: 2rem;
+      background: #ccc;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    /* 網頁標頭，通常放置網站 logo、名稱、導航列 */
+    
+    header {
+      background: #7EAA55;
+      overflow: hidden;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    header nav {
+      width: 40%;
+    }
+    
+    h1.logo {
+      background: #fff;
+      padding: 1rem;
+    }
+    
+    h2 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      color: #fff;
+    }
+    
+    h3 {
+      margin-top: 0;
+    }
+    /* 網頁的選單、導覽列 */
+    
+    nav {
+      background: #DE6455;
+      padding: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    /* 網頁的主要內容 */
+    
+    main {
+      background: #699AD0;
+      padding: 1rem;
+      width: 60%;
+      box-sizing: border-box;
+    }
+    /* 自訂的區塊，例如數篇摘要組成的空間 */
+    
+    section {
+      background: #FFB000;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    /* 一篇文章內容 */
+    
+    article {
+      background: #DF8244;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    /* 網頁的側欄、附加內容 */
+    
+    aside {
+      background: #8B7EBE;
+      padding: 1rem;
+      width: 40%;
+      box-sizing: border-box;
+    }
+    /* 網頁結尾，通常放置聯絡資訊、版權宣告 */
+    
+    footer {
+      background: #48742C;
+      padding: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">Logo</h1>
+    <nav>
+      <h2>nav</h2>
+      導覽列（語言切換／分享）
+    </nav>
+  </header>
+  <nav>
+    <h2>nav</h2>
+    選單
+  </nav>
+  <main>
+    <section>
+      <h2>section</h2>
+      <article>
+        <h3>article</h3>
+        一篇文章內容
+      </article>
+      <article>
+        <h3>article</h3>
+      </article>
+    </section>
+    <section>
+      <h2>section</h2>
+    </section>
+  </main>
+  <aside>
+    <h2>aside</h2>網頁的側欄、附加內容</aside>
+  <footer>
+    <h2>footer</h2>聯絡資訊、版權宣告</footer>
+</body>
+
+</html>

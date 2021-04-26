@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- HTML5 的宣告方式，比以往的宣告方式更簡單，未支援 HTML5的瀏覽器會忽略其特性。因為是宣告，所以沒有結束標籤 -->
+<html>
+<!-- 網頁的最根部元素 -->
+
+<head>
+  <!-- 在網頁的資訊，包含 CSS & JS 檔案的網址，內容不會顯示在頁面上 -->
+  <!-- 在瀏覽器 tab 標籤上的標題 -->
+  <title>ol有序清單ul無序清單</title>
+  <!-- 聲明該頁面的編碼方式 -->
+  <meta charset="UTF-8">
+  <!-- 行動裝置的顯示方式，initial-scale=1.0 代表不縮放 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 在瀏覽器 tab 標籤上的小圖示 -->
+  <link rel="icon" href="favicon.ico">
+  <link href="main.css" rel="stylesheet">
+  <style>
+    span {
+      color: red;
+      margin-right: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>ol有序清單</h2>
+  <ol>
+    <li>無序清單</li>
+    <li>無序清單</li>
+    <li>無序清單</li>
+  </ol>
+  <h2>ul無序清單</h2>
+  <ul>
+    <li>無序清單</li>
+    <li>無序清單</li>
+    <li>無序清單</li>
+  </ul>
+  <ol>
+    <li style="list-style-type: none;"><span>不顯示符號</span>list-style-type: none; </li>
+    <li style="list-style-type: disc;"><span>實心圓形</span>list-style-type: disc;</li>
+    <li style="list-style-type: circle;"><span>空心圓形</span>list-style-type: circle;</li>
+    <li style="list-style-type: square;"><span>實心正方形</span>list-style-type: square;</li>
+    <li style="list-style-type: lower-alpha;"><span>小寫英文字母</span>list-style-type: lower-alpha;</li>
+    <li style="list-style-type: upper-alpha;"><span>大寫英文字母</span>list-style-type: upper-alpha;</li>
+    <li style="list-style-type: decimal;"><span>阿拉伯數字</span>list-style-type: decimal;</li>
+    <li style="list-style-type: decimal-leading-zero;"><span>十進位制的阿拉伯數字，前方自動補零
+</span>list-style-type: decimal-leading-zero;</li>
+    <li style="list-style-type: armenian;"><span>亞美尼亞語</span>list-style-type: armenian;</li>
+    <li style="list-style-type: lower-greek;"><span>希臘語</span>list-style-type: lower-greek;</li>
+    <li style="list-style-type: lower-roman;"><span>小寫羅馬數字</span>list-style-type: lower-roman;</li>
+    <li style="list-style-type: upper-roman;"><span>大寫羅馬數字</span>list-style-type: upper-roman;</li>
+  </ol>
+  <div class="tip">
+    <ul>
+      <li><span>&lt;li&gt;</span> <span>&lt;i&gt;</span> <span>&lt;b&gt;</span> 只有視覺上的意義，而<span>&lt;em&gt;</span> <span>&lt;strong&gt;</span> <span>&lt;s&gt;</span> <span>&lt;del&gt;</span> 具有語意上的意義。</li>
+      <li>代表一篇文章的內容，通常包含標題、內容、註腳</li>
+    </ul>
+  </div>
+</body>
+
+</html>
