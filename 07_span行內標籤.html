@@ -19,15 +19,26 @@
       margin-bottom: 1rem;
       border: 1px dotted #333;
     }
+    
+    p {
+      background: red;
+    }
+    
+    span {
+      background: green;
+    }
   </style>
 </head>
 
 <body>
   <h2>span行內標籤</h2>
-  <p> 我是p一段文字 <span> 我是span一小段話 </span> 我是p一段文字 </p>
-  <div> div區塊內容 <span> span行內標籤 </span>div區塊內容 </div>
-  <div> div區塊內容
-    <div> div區塊內容 </div>div區塊內容 </div>
+  <p>p我是一塊</p>
+  <div>div我是一塊</div>
+  <div>
+    aaaa <span>ccc</span><a href="">ddd</a>
+    <div>bbb</div>
+  </div>
+
   <div class="tip">
     <ul>
       <li><span>&lt;span&gt;</span> 標籤是一個用來包裹文字或其他行內 (inline) 標籤的標籤，用來方便 CSS 做樣式排版，本身和<span>&lt;div&gt;</span>一樣沒任何特殊意義也不帶任何標籤語意。</li>
