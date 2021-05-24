@@ -1,0 +1,206 @@
+body {
+  background: #F1F1F1;
+}
+
+.tip {
+  background: #000;
+  padding: .5rem;
+  border-radius: 8px;
+  line-height: 160%;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.tip span {
+  color: #FFB000;
+}
+
+.tip ul {}
+
+.tip ul li {
+  margin-bottom: 0.4rem;
+}
+
+
+/*--display_test------------------------------------------------*/
+
+.display_test {
+  text-align: left;
+  /*區塊在父元素中水平對齊的方式：左、中、右*/
+  background: #dedede;
+  padding: 1em;
+  margin: 1em;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+}
+
+.display_test .block {
+  display: block;
+  background: #39C;
+  height: 50px;
+  margin: 10px;
+  padding: 15px 15px 15px 15px;
+  vertical-align: middle;
+  /*指定無效*/
+  line-height: 50px;
+  /*解決垂直置中對齊的辦法*/
+}
+
+.display_test .inline {
+  display: inline;
+  background: #F60;
+  width: 300px;
+  /*指定無效*/
+  height: 150px;
+  /*指定無效*/
+  margin: 0;
+  /*只有左右有效，上下指定無效*/
+  padding: 30px 15px;
+}
+
+.display_test .inline-block {
+  display: inline-block;
+  background: #636;
+  width: 90px;
+  margin: 30px;
+  padding: 15px;
+  text-align: right;
+  /*元素本身文字內容的水平對齊方式：左、中、右*/
+  vertical-align: middle;
+  /*區塊之間的垂直對齊方式：上、中、下*/
+}
+
+
+/*--position_test------------------------------------------------*/
+
+.position_test {
+  background: #dedede;
+  height: 1000px;
+  width: 100%;
+}
+
+.position_test>div {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  background: #666;
+}
+
+.position_test .static {
+  background: #39C;
+  display: static;
+}
+
+.position_test .relative {
+  background: #369;
+  display: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.position_test .fixed {
+  background: #F60;
+  position: fixed;
+  right: 0;
+  top: 400px;
+}
+
+.position_test .absolute {
+  background: #636;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+/*--boxModel_test1------------------------------------------------*/
+
+.boxModel_test1 {
+  padding: 2em;
+  width: 800px;
+  margin: 0 auto;
+  background: #FFF;
+}
+
+.boxModel_test1>div {
+  background: #dedede;
+}
+
+.boxModel_test1 .a {
+  padding: 10em;
+}
+
+.boxModel_test1 .b {
+  border: 12px dotted red;
+}
+
+.boxModel_test1 .c {
+  margin: 3em;
+  padding: 3em;
+  background-color: #F1F1F1;
+}
+
+
+/*--boxModel_test2------------------------------------------------*/
+
+.boxModel_test2>div {
+  background: lightgreen;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.boxModel_test2 .box-1 {
+  margin: 10px;
+}
+
+.boxModel_test2 .box-2 {
+  padding: 10px;
+  border: 10px solid #ccc;
+  margin: 10px;
+}
+
+
+/*--overflow_test------------------------------------------------*/
+
+.overflow_test {
+  width: 400px;
+  height: 150px;
+  background: #dedede;
+  overflow: scroll;
+  /*visible hidden scroll auto*/
+  padding: 10px;
+}
+
+
+/*--float_test------------------------------------------------*/
+
+.float_test {
+  background: #ccc;
+}
+
+.float_test .box {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #F60;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.float .box {
+  float: left;
+  /*right right none*/
+  background: #39C;
+}
+
+.box.clear {
+  clear: left;
+  /*left right both*/
+}

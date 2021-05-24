@@ -12,27 +12,28 @@
   <!-- 行動裝置的顯示方式，initial-scale=1.0 代表不縮放 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 在瀏覽器 tab 標籤上的小圖示 -->
-  <link rel="icon" href="favicon.ico">
-  <link href="main.css" rel="stylesheet">
-  <style>
+  <link rel="icon" href="images/star.png">
+  <!-- 連接 css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <style>
     span {
       color: red;
       margin-right: 1rem;
       font-weight: bold;
     }
-  </style>
+  </style> -->
 </head>
 
 <body>
   <h2>ol有序清單</h2>
-  <ol>
+  <ol style="list-style-type: upper-alpha;">
     <li>有序清單</li>
     <li>有序清單</li>
     <li>有序清單</li>
   </ol>
   <h2>ul無序清單</h2>
   <ul>
-    <li>無序清單</li>
+    <li style="list-style-type: circle;">無序清單</li>
     <li>無序清單</li>
     <li>無序清單</li>
   </ul>
@@ -45,7 +46,7 @@
     <li style="list-style-type: upper-alpha;"><span>大寫英文字母</span>list-style-type: upper-alpha;</li>
     <li style="list-style-type: decimal;"><span>阿拉伯數字</span>list-style-type: decimal;</li>
     <li style="list-style-type: decimal-leading-zero;"><span>十進位制的阿拉伯數字，前方自動補零
-</span>list-style-type: decimal-leading-zero;</li>
+    </span>list-style-type: decimal-leading-zero;</li>
     <li style="list-style-type: armenian;"><span>亞美尼亞語</span>list-style-type: armenian;</li>
     <li style="list-style-type: lower-greek;"><span>希臘語</span>list-style-type: lower-greek;</li>
     <li style="list-style-type: lower-roman;"><span>小寫羅馬數字</span>list-style-type: lower-roman;</li>
